@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Blog Tech</title>
+    <link id="estilo" rel="stylesheet" href="styles3.css">
+</head>
+
+<body class="blog">
+    <header>
+        <h1>Mini Blog de Tecnologia</h1>
+    </header>
+    <main>
+        <div>
+            <h2>Primeiros passos com HTML</h2>
+            <p>HTML é a base das páginas na web. Com ele organizamos títulos, textos e a estrutura do conteúdo
+                apresentado no navegador.</p>
+            <p class="autor"><b>Autor: Ely Miranda | Data: 08/03/2026</b></p>
+            <p class="separador">&#9733; &#9733; &#9733;</p>
+        </div>
+
+        <div>
+            <h2>O papel do CSS</h2>
+            <p>O CSS define a aparência da página. Ele permite alterar cores, alinhamentos e tipografia, tornando os
+                sites mais agradáveis visualmente.</p>
+            <p class="autor"><b>Autor: Ely Miranda | Data: 08/03/2026</b></p>
+            <p class="separador">&#9733; &#9733; &#9733; </p>
+        </div>
+
+        <div>
+            <h2>Validação do código</h2>
+            <p>Validar o HTML ajuda a encontrar erros e manter o código organizado, seguindo os padrões recomendados
+                para desenvolvimento web.</p>
+            <p class="autor"><b>Autor: Ely Miranda | Data: 08/03/2026</b></p>
+            <p class="separador">&#9733; &#9733; &#9733; </p>
+        </div>
+
+        <div id="questao2">
+            <h2>Tag &lt;body&gt; é obrigatória?</h2>
+            <p>A taga body do HTML é ogrigatória, porém se se não colocar, o código não vai dar erro, pois o próprio
+                navegador adiciona quando não tem. Apesar disso, é boa prática sempre utilizar a tag &lt;body&gt;.</p>
+            <p class="autor"><b>Autor: Vitória Barbosa | Data: 12/03/2026</b></p>
+            <p class="separador">&#9733; &#9733; &#9733; </p>
+        </div>
+    </main>
+    <div class="aside">
+        <h3>Links:</h2>
+            <a href="#questao2">Questão 2</a>
+            <a href="exame-de-vista.html">Questão 3</a>
+            <p>Mude as cores do blog:</p>
+            <button onclick="mudarEstilo()">Mudar cor</button>
+    </div>
+
+    <script>
+        function mudarEstilo() {
+            const estilos = ["styles.css", "styles2.css", "styles3.css"];
+            const random = Math.floor(Math.random() * 3);
+            const estiloAleatorio = estilos[random];
+            document.getElementById("estilo").href = estiloAleatorio;
+        }
+    </script>
+</body>
+
+</html>
