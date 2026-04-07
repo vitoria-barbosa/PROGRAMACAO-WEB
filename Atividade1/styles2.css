@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +8,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
 }
 
 .blog {
@@ -24,6 +27,11 @@ header {
   font-family: monospace, Arial;
   background-color: #011f26;
   color: #fff;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
 }
 
 main {
@@ -63,6 +71,7 @@ main div {
 
 div h2 {
   color: #025e73;
+  font-size: 1.5rem;
 }
 
 div p {
@@ -70,8 +79,30 @@ div p {
   text-align: justify;
 }
 
+.p1 {
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: 700;
+}
+
+.p2 {
+  font-family: "Tilt Neon", sans-serif;
+  font-weight: 900;
+}
+
+.p3 {
+  font-family: "Tilt Neon", sans-serif;
+  font-style: oblique 10deg;
+}
+
+.p4 {
+  font-family: "Tilt Neon", sans-serif;
+  font-style: oblique 20deg;
+}
+
 .autor {
   text-align: right;
+  font-style: italic;
+  font-size: 0.8rem;
 }
 
 .separador {
@@ -102,6 +133,38 @@ button {
 
 button:hover {
   border: #011f26 solid 2px;
-  background-color: #f0cdd2;
+  background-color: #a5a692;
   color: #011f26;
+}
+
+.tilt-neon {
+  font-family: "Tilt Neon", sans-serif;
+  line-height: 1.5rem;
+}
+
+.lista ol {
+  color: #e5e7eb;
+  list-style-position: inside;
+  /* Limita a largura da lista */
+  max-width: 400px;
+  /* Centraliza a lista horizontalmente */
+  margin: auto;
+}
+
+.lista li {
+  background: #025e73;
+  border-radius: 12px;
+  padding: 0.8rem 1.2rem;
+  margin: 0.8rem 0;
+  /* usa junto do transform */
+  transition: 0.2s;
+}
+
+.lista li:hover {
+  transform: translateX(6px);
+  background: #0c8fac;
+}
+
+.lista li:first-child::before {
+  content: "🏆 ";
 }
