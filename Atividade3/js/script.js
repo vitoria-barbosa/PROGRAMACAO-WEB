@@ -1,4 +1,4 @@
-function mudarCorFundo() {
+const mudarCorFundo = () => {
   let inputCorFundo = document.getElementById("cor-fundo");
 
   inputCorFundo.addEventListener("input", () => {
@@ -6,7 +6,7 @@ function mudarCorFundo() {
     document.body.style.backgroundImage = "none";
     document.body.style.backgroundColor = cor;
   });
-}
+};
 
 function mudarCorTexto() {
   let inputCorTexto = document.getElementById("cor-texto");

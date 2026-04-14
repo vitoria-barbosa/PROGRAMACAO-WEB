@@ -28,60 +28,83 @@
   </header>
 
   <main>
-    <section id="artigos">
+    <section>
 
       <article class="card" id="ultima">
         <h2>Formulários</h2>
-        <h3>Mudar cores da página</h3>
-        <p>Cor do fundo:</p>
-        <input type="color" id="cor-fundo" name="cor-fundo" value="#ffffff" onclick="mudarCorFundo()">
-        <p>Cor do texto:</p>
-        <input type="color" id="cor-texto" name="cor-texto" onclick="mudarCorTexto()">
 
-        <h3>Formulário busca no google</h3>
-        <form action="http://www.google.com/search" method="get">
-          <input name="q">
-          <input type="submit" value="Pesquisar">
-        </form>
+        <fieldset>
+          <legend>Mudar cores da página</legend>
 
-        <h3>Busca no youtube</h3>
-        <form action="https://www.youtube.com/results" method="get">
-          <input name="search_query">
-          <input type="submit" value="Pesquisar">
-        </form>
+          <p>Cor do fundo:</p>
+          <input type="color" id="cor-fundo" name="cor-fundo" value="#ffffff" onclick="mudarCorFundo()">
+          <p>Cor do texto:</p>
+          <input type="color" id="cor-texto" name="cor-texto" onclick="mudarCorTexto()">
+        </fieldset>
 
-        <h3>Formulário básico de login e senha</h3>
-        <!-- nunca colocar o método get com dados sensíveis -->
-        <form action="https://example.com/login" method="post">
-          <label for="login">Login:</label>
-          <input type="text" id="login" name="login"><br>
-          <label for="senha">Senha:</label>
-          <input type="password" id="senha" name="senha"><br>
-          <input type="submit" value="Entrar">
-        </form>
+        <fieldset>
+          <legend>Busca</legend>
 
-        <h3>Formulário de cadastro com checkboxes e botoes de radio</h3>
-        <form action="https://example.com/cadastro" method="get">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome"><br>
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email"><br>
-          <p>Gênero:</p>
-          <input type="radio" id="masculino" name="genero" value="masculino">
-          <label for="masculino">Masculino</label><br>
-          <input type="radio" id="feminino" name="genero" value="feminino">
-          <label for="feminino">Feminino</label><br>
-          <input type="radio" id="outro" name="genero" value="outro">
-          <label for="outro">Outro</label><br>
-          <p>Interesses:</p>
-          <input type="checkbox" id="interesse1" name="interesse1">
-          <label for="interesse1">Programação</label><br>
-          <input type="checkbox" id="interesse2" name="interesse2">
-          <label for="interesse2">Design</label><br>
-          <input type="checkbox" id="interesse3" name="interesse3">
-          <label for="interesse3">Marketing</label><br>
-          <input type="submit" value="Cadastrar">
-        </form>
+          <p>Pesquisar no Google:</p>
+          <form class="form" action="http://www.google.com/search" method="get">
+            <input class="input-texto" name="q">
+            <input class="botao" type="submit" value="Pesquisar">
+          </form>
+
+          <p>Pesquisar no You Tube:</p>
+          <form class="form" action="https://www.youtube.com/results" method="get">
+            <input class="input-texto" name="search_query">
+            <input class="botao" type="submit" value="Pesquisar">
+          </form>
+        </fieldset>
+
+        <fieldset>
+          <legend>Form Login</legend>
+          <!-- nunca colocar o método get com dados sensíveis -->
+          <form class="form-row" action="https://example.com/login" method="post">
+            <div class="label-input">
+              <label for="login">Login</label>
+              <input class="input-texto" type="text" id="login">
+            </div>
+            <div class="label-input">
+              <label for="senha">Senha</label>
+              <input class="input-texto" type="password" id="senha">
+            </div>
+          </form>
+
+          <input class="botao" type="submit" value="Entrar">
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Form Cadastro:</legend>
+
+          <form class="form" action="https://example.com/cadastro" method="get">
+            <div class="form-row">
+              <div class="label-input">
+                <label for="nome">Nome:</label>
+                <input class="input-texto" type="text" id="nome">
+              </div>
+              <div class="label-input">
+                <label for="email">E-mail:</label>
+                <input class="input-texto" type="email" id="email">
+              </div>
+            </div>
+
+            <p>Gênero:</p>
+            <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+            <label><input type="radio" name="genero" value="feminino"> Feminino</label>
+            <label><input type="radio" name="genero" value="outro"> Outro</label>
+
+            <p>Interesses:</p>
+            <label><input type="checkbox" name="interesse1"> Programação</label>
+            <label><input type="checkbox" name="interesse2"> Design</label>
+            <label><input type="checkbox" name="interesse3"> Marketing</label>
+
+            <input class="botao" type="submit" value="Cadastrar">
+          </form>
+        </fieldset>
+
         <p class="autor-data">por Ely Miranda em 03/03/2026</p>
       </article>
 
@@ -246,6 +269,7 @@
         </ul>
         <p class="autor-data">por Ely Miranda em 03/03/2026</p>
       </article>
+
       <article class="card">
         <h2>Listas </h2>
 
@@ -281,6 +305,28 @@
         <div class="div1"></div>
         <div class="div2"></div>
         <div class="div3"></div>
+
+        <img id="img" src="imagens/gatinho.webp" alt="imagem gatinho">
+        <img class="img-box" src="imagens/gatinho.webp" alt="imagem gatinho">
+        <img class="img2" src="imagens/ilustracao.jpg" alt="imagem pessoas internet">
+
+        <img src="imagens/paisagem.jpg" srcset="
+        imagens/paisagem-pequena.jpg 480w,
+        imagens/paisagem-media.jpg 800w,
+        imagens/paisagem.jpg 1200w" sizes="(max-width: 600px) 100vw,
+        (max-width: 900px) 80vw,
+        1200px" alt="Paisagem">
+
+        <p>imagem normal</p>
+        <img src="imagens/banner-paisagem.jpg" alt="banner">
+
+        <p>usando picture com source</p>
+        <picture>
+          <source media="(max-width: 600px)" srcset="imagens/banner-pequeno.jpg">
+          <source media="(max-width: 1024px)" srcset="imagens/banner-medio.jpg">
+          <img src="imagens/banner-paisagem.jpg" alt="Banner">
+        </picture>
+
         <p class="autor-data">por Ely Miranda em 03/03/2026</p>
 
       </article>
