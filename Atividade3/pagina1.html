@@ -111,152 +111,155 @@
       <article class="card">
         <h2>Box model</h2>
 
-        <div id="bm-1">Instituto Federal do Piauí</div>
-        <div id="bm-2">Instituto Federal do Piauí</div>
-        <div id="bm-3">Instituto Federal do Piauí</div>
-
+        <div class="container">
+          <div class="mini-card" id="bm-1">Instituto Federal do Piauí</div>
+          <div class="mini-card" id="bm-2">Instituto Federal do Piauí</div>
+          <div class="mini-card" id="bm-3">Instituto Federal do Piauí</div>
+        </div>
         <p class="autor-data">por Ely Miranda em 03/03/2026</p>
       </article>
 
       <article class="card">
+
         <h2>Tabelas</h2>
+        <div class="container-tabelas">
 
-        <h3>Tabela básica apenas com table, tr e td</h3>
-        <table class="tabela1">
-          <tr>
-            <td>Célula 1,1</td>
-            <td>Célula 1,2</td>
-            <td>Célula 1,3</td>
-          </tr>
-          <tr>
-            <td>Célula 2,1</td>
-            <td>Célula 2,2</td>
-            <td>Célula 2,3</td>
-          </tr>
-          <tr>
-            <td>Célula 3,1</td>
-            <td>Célula 3,2</td>
-            <td>Célula 3,3</td>
-          </tr>
-        </table>
-
-        <h3>Tabela com cabeçalho sobre notas de alunos</h3>
-        <table class="tabela2">
-          <tr>
-            <th>Aluno</th>
-            <th>Nota 1</th>
-            <th>Nota 2</th>
-            <th>Média</th>
-          </tr>
-          <tr>
-            <td>Ana</td>
-            <td>8,5</td>
-            <td>9,0</td>
-            <td>8,75</td>
-          </tr>
-          <tr>
-            <td>Bruno</td>
-            <td>7,0</td>
-            <td>6,5</td>
-            <td>6,75</td>
-          </tr>
-          <tr>
-            <td>Carlos</td>
-            <td>9,0</td>
-            <td>8,0</td>
-            <td>8,5</td>
-          </tr>
-          <tr>
-            <td>Diana</td>
-            <td>6,5</td>
-            <td>7,5</td>
-            <td>7,0</td>
-          </tr>
-          <tr>
-            <td>Eduardo</td>
-            <td>8,0</td>
-            <td>8,5</td>
-            <td>8,25</td>
-          </tr>
-        </table>
-
-        <h3>Tabela sobre filmes com colspan e rowspan</h3>
-        <table class="tabela3">
-          <tr>
-            <th>Filme</th>
-            <th>Ano</th>
-            <th>Gênero</th>
-          </tr>
-          <tr>
-            <td rowspan="2">O Senhor dos Anéis: A Sociedade do Anel</td>
-            <td>2001</td>
-            <td>Fantasia/Aventura</td>
-          </tr>
-          <tr>
-            <td>2002</td>
-            <td>Fantasia/Aventura</td>
-          </tr>
-          <tr>
-            <td colspan="2">Matrix</td>
-            <td>Ação/Ficção Científica</td>
-          </tr>
-          <tr>
-            <td>O Poderoso Chefão</td>
-            <td>1972</td>
-            <td>Crime/Drama</td>
-          </tr>
-        </table>
-
-        <table class="tabela4">
-          <caption>Relatório de Vendas</caption>
-
-          <colgroup>
-            <col class="col-produto">
-            <col class="col-mes">
-            <col class="col-mes">
-            <col class="col-total">
-          </colgroup>
-
-          <thead>
+          <h3>Tabela básica apenas com table, tr e td</h3>
+          <table class="tabela1">
             <tr>
-              <th>Produto</th>
-              <th>Janeiro</th>
-              <th>Fevereiro</th>
-              <th>Total</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>Notebook</td>
-              <td>10</td>
-              <td>15</td>
-              <td>25</td>
+              <td>Célula 1,1</td>
+              <td>Célula 1,2</td>
+              <td>Célula 1,3</td>
             </tr>
             <tr>
-              <td>Smartphone</td>
-              <td>20</td>
-              <td>30</td>
-              <td>50</td>
+              <td>Célula 2,1</td>
+              <td>Célula 2,2</td>
+              <td>Célula 2,3</td>
             </tr>
             <tr>
-              <td>Tablet</td>
-              <td>5</td>
-              <td>10</td>
-              <td>15</td>
+              <td>Célula 3,1</td>
+              <td>Célula 3,2</td>
+              <td>Célula 3,3</td>
             </tr>
-          </tbody>
+          </table>
 
-          <tfoot>
+          <h3>Tabela com cabeçalho sobre notas de alunos</h3>
+          <table class="tabela2">
             <tr>
-              <td>Total Geral</td>
-              <td>35</td>
-              <td>55</td>
-              <td>90</td>
+              <th>Aluno</th>
+              <th>Nota 1</th>
+              <th>Nota 2</th>
+              <th>Média</th>
             </tr>
-          </tfoot>
-        </table>
+            <tr>
+              <td>Ana</td>
+              <td>8,5</td>
+              <td>9,0</td>
+              <td>8,75</td>
+            </tr>
+            <tr>
+              <td>Bruno</td>
+              <td>7,0</td>
+              <td>6,5</td>
+              <td>6,75</td>
+            </tr>
+            <tr>
+              <td>Carlos</td>
+              <td>9,0</td>
+              <td>8,0</td>
+              <td>8,5</td>
+            </tr>
+            <tr>
+              <td>Diana</td>
+              <td>6,5</td>
+              <td>7,5</td>
+              <td>7,0</td>
+            </tr>
+            <tr>
+              <td>Eduardo</td>
+              <td>8,0</td>
+              <td>8,5</td>
+              <td>8,25</td>
+            </tr>
+          </table>
 
+          <h3>Tabela sobre filmes com colspan e rowspan</h3>
+          <table class="tabela3">
+            <tr>
+              <th>Filme</th>
+              <th>Ano</th>
+              <th>Gênero</th>
+            </tr>
+            <tr>
+              <td rowspan="2">O Senhor dos Anéis: A Sociedade do Anel</td>
+              <td>2001</td>
+              <td>Fantasia/Aventura</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td>Fantasia/Aventura</td>
+            </tr>
+            <tr>
+              <td colspan="2">Matrix</td>
+              <td>Ação/Ficção Científica</td>
+            </tr>
+            <tr>
+              <td>O Poderoso Chefão</td>
+              <td>1972</td>
+              <td>Crime/Drama</td>
+            </tr>
+          </table>
+
+          <table class="tabela4">
+            <caption>Relatório de Vendas</caption>
+
+            <colgroup>
+              <col class="col-produto">
+              <col class="col-mes">
+              <col class="col-mes">
+              <col class="col-total">
+            </colgroup>
+
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Janeiro</th>
+                <th>Fevereiro</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Notebook</td>
+                <td>10</td>
+                <td>15</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>Smartphone</td>
+                <td>20</td>
+                <td>30</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Tablet</td>
+                <td>5</td>
+                <td>10</td>
+                <td>15</td>
+              </tr>
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <td>Total Geral</td>
+                <td>35</td>
+                <td>55</td>
+                <td>90</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
         <p class="autor-data">por Ely Miranda em 03/03/2026</p>
       </article>
       <article class="card">

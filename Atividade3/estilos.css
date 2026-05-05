@@ -97,6 +97,16 @@ nav a:hover {
   color: var(--color-cinza-claro);
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+
+  & .mini-card {
+    margin-bottom: 5px;
+    max-width: 380px;
+  }
+}
+
 .card ul,
 .card ol {
   list-style-position: outside;
@@ -341,10 +351,23 @@ a:focus {
   border: 1px solid gray;
 }
 
+.container-tabelas {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & table {
+    max-width: 80%;
+    margin: 20px 0;
+  }
+}
+
 .tabela1,
 .tabela2,
 .tabela3,
 .tabela4 {
+  border: 1px solid black;
   margin: auto;
   width: 80%;
   border-collapse: collapse;
@@ -434,7 +457,6 @@ tfoot td {
 
 #bm-1 {
   border: 1px solid red;
-  margin: 0px 20% 5px 20%;
 }
 
 #bm-2 {
@@ -446,9 +468,6 @@ tfoot td {
 
 #bm-3 {
   border: 1px solid orange;
-  padding: 10px;
-  width: 200px;
-  height: 50px;
 }
 
 footer {
@@ -503,7 +522,7 @@ footer {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 500px) {
   * {
     margin: 0;
     padding: 0;
