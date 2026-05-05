@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.calc {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 1.8rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+input[type="number"] {
+  padding: 10px;
+}
+
+button {
+  padding: 5px 8px;
+  background-color: aquamarine;
+  border-radius: 5px;
+}
