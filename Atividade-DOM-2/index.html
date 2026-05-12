@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade</title>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Atividade 2 de D.O.M.</h1>
+  <p><strong>Questão 1</strong></p>
+  <label for="mensagem">Mensagem do erro:</label>
+  <input id="mensagem" type="text">
+  <label for="id">Id do elemento:</label>
+  <input id="id" type="text">
+  <button id="botaoErro">Mostrar Erro</button>
+  <div id="mensagemErro"></div>
+  <div id="saida-q1"></div>
+
+  <p><strong>Questão 2</strong></p>
+  <label for="caixaDeTexto">Digite o texto:</label>
+  <input type="text" id="caixaDeTexto">
+  <button id="botaoExibir">Exibir</button>
+  <div id="conteudo"></div>
+
+  <p><strong>Questão 3</strong></p>
+  <p>Calcular Taxa de Engajamento</p>
+  <label for="qtdInteracoes">Número de Interações (Curtidas, Comentários, Compartilhamentos):</label>
+  <input id="qtdInteracoes" type="number" name="input">
+  <label for="qtdVisualizacoes">Número de Visualizações:</label>
+  <input id="qtdVisualizacoes" type="number" name="input">
+  <button id="botao-calcular">Calcular</button>
+  <div id="saida-q3"></div>
+
+  <p><strong>Questão 4</strong></p>
+  <label for="uploadImagem">Selecione uma imagem dos seus arquivos:</label>
+  <input type="file" id="uploadImagem" accept="image/*">
+  <button id="botao-q4">Carregar imagem</button>
+  <div id="imagem-q4"></div>
+  <div id="saida-q4"></div>
+
+  <p><strong>Questão 5</strong></p>
+  <label for="select-q5">Selecione uma das opções de imagem:</label>
+  <select id="select-q5">
+    <option value="imagens/imagem-disco.jpg">disco de música</option>
+    <option value="imagens/imagem-flores.jpg">campo de flores</option>
+    <option value="imagens/imagem-vermelha.jpg">balões vermelhos</option>
+  </select>
+  <div id="imagem-q5">
+    <img id="img-resultado" alt="imagem-selecionada" class="oculto">
+  </div>
+
+  <p><strong>Questão 6</strong></p>
+  <p>Selecione suas redes sociais preferidas:</p>
+  <div>
+    <input type="checkbox" id="facebook" name="redesSociais" value="Facebook">
+    <label for="facebook">Facebook</label>
+  </div>
+  <div>
+    <input type="checkbox" id="twitter" name="redesSociais" value="Twitter">
+    <label for="twitter">Twitter</label>
+  </div>
+  <div>
+    <input type="checkbox" id="instagram" name="redesSociais" value="Instagram">
+    <label for="instagram">Instagram</label>
+  </div>
+  <div>
+    <input type="checkbox" id="linkedin" name="redesSociais" value="LinkedIn">
+    <label for="linkedin">LinkedIn</label>
+  </div>
+  <div>
+    <input type="checkbox" id="tiktok" name="redesSociais" value="TikTok">
+    <label for="tiktok">TikTok</label>
+  </div>
+  <button type="button" id="botaoEnviar-q6">Enviar</button>
+  <div id="saida-q6"></div>
+  <div id="msgErro-q6"></div>
+
+  <p><strong>Questão 7, 8 e 9</strong></p>
+  <label for="texto-q7">Digite uma hashtag para adicionar ao select(max: 5):</label>
+  <input id="texto-q7" type="text">
+  <button id="botao-q7">Adicionar</button>
+  <select class="select-q7" name="select" id="select-q7" size="5"></select>
+  <button id="botaoRemover">Remover</button>
+  <div id="saida-q7"></div>
+
+  <p><strong>Questão 10</strong></p>
+  <p><strong>Mover Ativos Financeiros entre Carteiras</strong></p>
+  <div class="container">
+    <div class="container2">
+      <label for="ativosDisponiveis">Ativos Disponíveis:</label>
+      <select id="ativosDisponiveis" size="10" multiple>
+        <option value="AAPL">Apple (AAPL)</option>
+        <option value="GOOGL">Google (GOOGL)</option>
+        <option value="AMZN">Amazon (AMZN)</option>
+        <option value="MSFT">Microsoft (MSFT)</option>
+        <option value="TSLA">Tesla (TSLA)</option>
+        <option value="BRK.B">Berkshire Hathaway (BRK.B)</option>
+        <option value="FB">Meta (FB)</option>
+        <option value="V">Visa (V)</option>
+        <option value="JNJ">Johnson & Johnson (JNJ)</option>
+        <option value="WMT">Walmart (WMT)</option>
+      </select>
+    </div>
+
+    <div class="buttons">
+      <button id="botaoAdicionarCarteira">&gt</button>
+      <button id="botaoRemoverCarteira" disabled>&lt</button>
+    </div>
+
+    <div class="container2">
+      <label for="carteiraInvestimentos">Carteira de Investimentos:</label>
+      <select id="carteiraInvestimentos" size="10" multiple></select>
+    </div>
+  </div>
+  <div id="saida-q10"></div>
+
+
+</body>
+
+</html>
